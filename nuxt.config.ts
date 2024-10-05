@@ -5,12 +5,12 @@ export default defineNuxtConfig({
   ssr: true,
   modules: ['nuxt-auth-sanctum'],
   sanctum: {
-    baseUrl: 'http://localhost:8000/api', // Laravel API
+    baseUrl: 'https://www.test.vahiiid.space/api', // Laravel API
     mode: "cookie",
     redirectIfAuthenticated: false,
     redirectIfUnauthenticated: false,
     endpoints: {
-      csrf:"http://localhost:8000/sanctum/csrf-cookie",
+      csrf:"https://www.test.vahiiid.space/sanctum/csrf-cookie",
       login: '/auth/login',
       user: '/auth/user',
       logout: "/auth/logout",
